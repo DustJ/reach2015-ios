@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<!-- For Distribution: DPS will need an HTMLResrouces.zip of the dist dir sans index.html. This index file will then need us to prepend paths with  (css, js, img, html). Example: <link rel="stylesheet" href="../HTMLResources/css/framework7.min.css"> -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Reach 2015</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7.themes.css">
+    <!-- Path to our custom app styles-->
+    <link rel="stylesheet" href="css/my-app-ios.css">
+    <!-- <link rel="stylesheet" href="css/my-app-android.css"> -->
+    <!-- Path to Font Awesome for icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Status bar overlay -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal layout-dark">
+        <div class="list-block" style="margin-top: 0;">
+          <ul>           
+            <li><a href="#index" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-home"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Home</div>
+              </div>
+              </div></a>
+            </li> 
+            <li><a href="#agenda" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-calendar"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Agenda</div>
+              </div>
+              </div></a>
+            </li>
+            <li><a href="#speakers" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-bullhorn"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Speakers</div>
+              </div>
+              </div></a>
+            </li>
+            <!-- <li><a href="#" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-cutlery"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Dinner Entertainment</div>
+              </div>
+              </div></a>
+            </li> -->
+            <li><a href="#venue-map" class="close-panel item-link pb-page">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-location-arrow"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Venue Map</div>
+              </div>
+              </div></a>
+            </li>
+            <li><a href="#location-info" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue" style="padding: 0 2px;"><i class="fa fa-map-marker"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Location Information</div>
+              </div>
+              </div></a>
+            </li>
+            <!-- <li><a href="#attendees" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-users"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Attendees</div>
+              </div>
+              </div></a>
+            </li> -->
+            <li><a href="#sponsors" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-info-circle"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Sponsors</div>
+              </div>
+              </div></a>
+            </li>
+            <li><a href="#labs" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-flask"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Labs</div>
+              </div>
+              </div></a>
+            </li>
+            <li><a href="#" class="close-panel item-link" onclick="window.open('https://www.vitalsmarts.com/reach/reach15/downloads.html','_system'); return false;">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-files-o"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Event Resources</div>
+              </div>
+              </div></a>
+            </li>            
+            <li><a href="#faq" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-question-circle"></i></div>
+              <div class="item-inner">
+              <div class="item-title">FAQ</div>
+              </div>
+              </div></a>
+            </li>
+            <!-- <li><a href="#" class="close-panel item-link" onclick="window.open('http://www.cvent.com/','_system'); return false;">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-pencil-square-o"></i></div>
+              <div class="item-inner">
+              <div class="item-title">Conference Evaluation</div>
+              </div>
+              </div></a>
+            </li> -->
+          </ul>  
+        </div>
+
+    </div>
+    
+    <!-- Views -->
+    <div class="views">
+      <!-- View -->
+      <div class="view view-main">
+ 
+        <!-- Navbar -->
+        <div class="navbar">
+          <!-- Home page navbar -->
+          <div class="navbar-inner" data-page="index">
+            <div class="left sliding">
+              <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>          
+            <div class="center sliding">Home</div>
+          </div>
+ 
+          <!-- Agenda page navbar -->
+          <div class="navbar-inner cached" data-page="agenda">
+            <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">Agenda</div>
+          </div>
+
+          <!-- Agendas page navbar -->
+          <!-- <div class="navbar-inner cached" data-page="agendas-saltlake">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Salt Lake Agenda</div>
+          </div> -->
+
+          <!-- Speakers page navbar -->
+          <div class="navbar-inner cached" data-page="speakers">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio joseph navbar -->
+          <div class="navbar-inner cached" data-page="bio-joseph">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio susan navbar -->
+          <div class="navbar-inner cached" data-page="bio-susan">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio brian navbar -->
+          <div class="navbar-inner cached" data-page="bio-brian">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio mike navbar -->
+          <div class="navbar-inner cached" data-page="bio-mike">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio sharon navbar -->
+          <div class="navbar-inner cached" data-page="bio-sharon">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio steve navbar -->
+          <div class="navbar-inner cached" data-page="bio-steve">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio cricket navbar -->
+          <div class="navbar-inner cached" data-page="bio-cricket">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio david navbar -->
+          <div class="navbar-inner cached" data-page="bio-david">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Speakers - Bio dave navbar -->
+          <div class="navbar-inner cached" data-page="bio-dave">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Speakers</div>
+          </div>
+
+          <!-- Venue Map page navbar -->
+          <div class="navbar-inner cached" data-page="venue-map">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+              </div>
+            <div class="center sliding">Grand America</div>
+          </div>
+          
+          <!-- Location Info page navbar -->
+          <div class="navbar-inner cached" data-page="location-info">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+              </div>
+            <div class="center sliding">Salt Lake Info</div>
+          </div>
+
+          <!-- Resources page navbar -->
+          <div class="navbar-inner cached" data-page="resources">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">Resources</div>
+          </div>
+
+          <!-- FAQ page navbar -->
+          <div class="navbar-inner cached" data-page="faq">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">FAQ</div>
+          </div>
+
+          <!-- Attendees page navbar -->
+          <div class="navbar-inner cached" data-page="attendees">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">Attendees</div>
+          </div>
+
+          <!-- Sponsors page navbar -->
+          <div class="navbar-inner cached" data-page="sponsors">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">Sponsors</div>
+          </div>
+
+          <!-- Labs page navbar -->
+          <div class="navbar-inner cached" data-page="labs">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">Labs</div>
+          </div>
+
+          <!-- Labs as child page navbar -->
+          <div class="navbar-inner cached" data-page="labs-child">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">Labs</div>
+          </div>
+
+          <!-- Breakouts page navbar -->
+          <div class="navbar-inner cached" data-page="breakouts">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+              <div class="center sliding">Breakouts</div>
+          </div>
+
+          <!-- BIG Ideas page navbar -->
+          <div class="navbar-inner cached" data-page="big-ideas">
+              <div class="left sliding">
+                <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
+            </div>
+            <div class="center sliding">BIG Ideas</div>
+          </div>
+
+
+        </div> <!-- end .navbar -->
+
+
+
+ 
+
+        <!-- Pages -->
+        <div class="pages navbar-through">
+
+
+          <!-- Home page -->
+          <div class="page" data-page="index">
+            <div class="page-content">
+              <div id="countdown-holder"></div>
+            </div>  
+          </div>
+ 
+          <!-- Agenda page -->
+          <!-- <div class="page cached" data-page="agendas">
+            <div class="page-content">
+                <div class="content-block">
+                  <div class="card demo-card-header-pic">
+                    <a href="#agendas-saltlake" class="item-link">
+                    <div style="background: url('img/location-saltlake.jpg') 50% 50%;" valign="bottom" class="card-header color-white no-border"><span style="text-shadow: 1px 1px 4px #000">Salt Lake City</span></div>
+                    </a>
+                  </div>
+                  <div class="card demo-card-header-pic" style="opacity: 0.2;">
+                    <a href="#" class="item-link">
+                    <div style="background-image: url('img/location-chicago.jpg');" valign="bottom" class="card-header color-white no-border">Chicago</div>
+                    </a>
+                  </div>            
+                  <div class="card demo-card-header-pic" style="opacity: 0.2;">
+                    <a href="#" class="item-link">
+                    <div style="background-image: url('img/location-dallas.jpg');" valign="bottom" class="card-header color-white no-border">Dallas</div>
+                    </a>
+                  </div>
+                  <div class="card demo-card-header-pic" style="opacity: 0.2;">
+                    <a href="#" class="item-link">
+                    <div style="background-image: url('img/location-dc.jpg');" valign="bottom" class="card-header color-white no-border">Washington D.C.</div>
+                    </a>
+                  </div>            
+                </div>
+            </div>
+          </div> -->
+ 
+          <!-- Agendas-SaltLake page -->
+          <div class="page cached" data-page="agenda">
+            <div class="page-content">
+              <div class="list-block">
+              <div class="accordion-list">
+
+                <!-- 28th group-->
+                <div class="list-group">
+                  <ul>
+                    <li class="list-group-title" style="background-color: #e64c3c; color: #ffffff;">Tuesday, July 28<br /><span style="font-size: 0.9em;">REACH Labs (Additional Registration Req.)</span></li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">8:00 &ndash; 8:55<span class="meeting-room">Grand Salon</span><span class="meeting-type">Breakfast</span></div>
+                      </div>
+                    </li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-thumbs-up"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">8:55 &ndash; 9:00<span class="meeting-room">Grand Salon</span><span class="meeting-type">Welcome</span></div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media medblue"><i class="fa fa-flask"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">9:00&ndash;12:00 <span  class="meeting-expandable">Labs</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">
+                          10X Your Training Implementation David Maxfield<br>
+                          <span class="darkblue" style="padding-right: 10px;">Murano</span></p>
+                          <p class="salmon">
+                          The Great Teaching Experiment Steve Willis<br>
+                          <span class="darkblue" style="padding-right: 10px;">Savoy</span></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">12:00 &ndash; 1:00 <span class="meeting-room">Grand Salon</span> <span class="meeting-type">Lunch</span></div>
+                      </div>
+                    </li> 
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-flask"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">1:00 &ndash; 4:30 <span class="meeting-expandable">Labs</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">
+                          10X Your Training Implementation David Maxfield<br>
+                          <span class="darkblue" style="padding-right: 10px;">Murano</span></p>
+                          <p class="salmon">
+                          The Great Teaching Experiment Steve Willis<br>
+                          <span class="darkblue" style="padding-right: 10px;">Savoy</span></p>
+                        </div>
+                      </div>
+                    </li>          
+                  </ul>
+                </div>
+               
+                <!-- 29th group-->
+                <div class="list-group">
+                  <ul>
+                    <li class="list-group-title" style="background-color: #e64c3c; color: #ffffff;">Wednesday, July 29 &ndash; REACH Day 1</li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-sun-o"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">6:30 &ndash; 7:30 <span class="meeting-room">Lobby</span> <span class="meeting-type">Good Morning: Yoga, Walk, Jog</span></div>
+                      </div>
+                    </li>            
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">8:00 &ndash; 9:00 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Breakfast</span></div>
+                      </div>
+                    </li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-comment"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">9:00 &ndash; 9:15 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Welcome</span></div>
+                      </div>
+                    </li> 
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-comment"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">9:15 &ndash; 10:30 <span class="meeting-expandable">BIG Idea Keynote Opening</span> &hellip;</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">Mastering the Art of Crucial Conversations<br><span class="vip">Joseph Grenny</span></p>
+                          <p class="salmon">Quiet: How to Harness the Strengths of Introverts to Change</p>
+                          <p class="salmon">How We Work, Lead, and Innovate Part I<br><span class="vip">Susan Cain</span></p>
+                          <p class="salmon">The Intentionally Designed Life<br><span class="vip">Cricket Buchler</span></p>
+                          <p class="salmon">Crucial Conversations at Facebook<br><span class="vip">Mike Ronglien</span></p>
+                        </div>
+                      </div>
+                    </li>                     
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-users"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">10:30 &ndash; 11:00 <span class="meeting-type">Break</span></div>
+                      </div>
+                    </li>           
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-flask"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">11:00 &ndash; 12:20 <span class="meeting-expandable">Breakout Session 1</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">
+                          How to Hold a Virtual Crucial Conversation<br><span class="vip">Jillian Morenz,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Savoy</span></p>
+                          <p class="salmon">
+                          Fizzle-Free Training<br><span class="vip">Candace Bertotti,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Murano</span></p>
+                          <p class="salmon">
+                          #crucialconversatiosn #facebook<br><span class="vip">Frankie Rae Callahan, </span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Grand Salon</span></p>
+                          <p class="salmon">
+                          Turning Training Graduates into Champions for Change<br><span class="vip">Steve Childs, </span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Envoy</span></p>
+                          <p class="salmon">
+                          Mind Mapping: A Crucial Skill for Visual Learners<br><span class="vip">TBD, </span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Milano</span></p>
+                          <p class="salmon">
+                          Triple Play: Workshopping with the Experts<br><span class="vip">Justin Hale, </span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Riviera</span></p>
+                          <p class="salmon">
+                          How to Speak Globish: Increasing Training Impact for Non- native English Speakers<br><span class="vip">Eric Francis, </span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Audobon</span></p>
+                        </div>
+                      </div>
+                    </li>                                                   
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">12:30 &ndash; 1:30 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Lunch</span></div>
+                      </div>
+                    </li> 
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-comment"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">1:30 &ndash; 2:30 <span class="meeting-expandable">BIG Idea Keynote Sessions</span></span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">The Art of Busking<br><span class="vip">Steve Willis</span></p>
+                          <p class="salmon">What’s Your Story<br><span class="vip">David Nelson</span></p>
+                          <p class="salmon">Quiet: How to Harness the Strengths of Introverts to Change</p>
+                          <p class="salmon">How We Work, Lead, and Innovate Part II<br><span class="vip">Susan Cain</span></p>
+                        </div>
+                      </div>
+                    </li>                     
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-users"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">2:30 &ndash; 3:10 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Break and Ice Cream Social</span></div>
+                      </div>
+                    </li>   
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-flask"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">3:10 &ndash; 4:30 <span class="meeting-expandable">Breakout Session 2</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">
+                          How to Hold a Virtual Crucial Conversation<br> <span class="vip">Jillian Morenz,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Savoy</span></p>
+                          <p class="salmon">
+                          Fizzle-Free Training<br> <span class="vip">Candace Bertotti,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Murano</span></p>
+                          <p class="salmon">
+                          Using the Applied Influencer Approach to Reduce Turnover<br> <span class="vip">Amy Podurgal,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Grand Salon</span></p>
+                          <p class="salmon">
+                          How to Adapt Training to Your Unique Audience<br> <span class="vip">Doug Finton,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Envoy</span></p>
+                          <p class="salmon">
+                          Product Overview: Crucial Skills Suite<br> <span class="vip">David Nelson,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Milano</span></p>
+                          <p class="salmon">
+                          Triple Play: Workshopping with the Experts<br> <span class="vip">Justin Hale,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Riviera</span></p>
+                          <p class="salmon">
+                          Caffeinate Your Training<br> <span class="vip">Patrice McGuire &amp; Beth Wolfson,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Audobon</span></p>
+                        </div>
+                      </div>
+                    </li>     
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-clock-o"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">4:30 &ndash; 6:30 <span class="meeting-type">Free Time</span></div>
+                      </div>
+                    </li>   
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">6:30 &ndash; 8:30 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Dinner &amp; Awards</span></div>
+                      </div>
+                    </li> 
+                  </ul>
+                </div>
+
+                <!-- 30th group-->
+                <div class="list-group">
+                  <ul>
+                    <li class="list-group-title" style="background-color: #e64c3c; color: #ffffff;">Thursday, July 30 &ndash; REACH Day 2</li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-sun-o"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">6:30 &ndash; 7:30 <span class="meeting-room">Lobby</span> <span class="meeting-type">Good Morning: Yoga, Walk, Jog</span></div>
+                      </div>
+                    </li>            
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">8:00 &ndash; 9:00 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Breakfast</span></div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-comment"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">9:00 &ndash; 10:00 <span class="meeting-expandable">BIG Idea Keynote Sessions</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">Welcome<br><span class="vip">David Nelson &amp; Amy Podurgal</span></p>
+                          <p class="salmon">Slim By Design<br><span class="vip">Brian Wansink</span></p>
+                          <p class="salmon">Women in the Workplace<br><span class="vip">David Maxfield</span></p>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-users"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">10:00 &ndash; 10:15 <span class="meeting-type">Break</span></div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-flask"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">10:15 &ndash; 11:15 <span class="meeting-expandable">Breakout Session 3</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">
+                          Crucial Skills Gives Back<br><span class="vip">Salomeh Diaz,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Murano</span></p>
+                          <p class="salmon">
+                          Made to Stick<br><span class="vip">Heath Brothers,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Grand Salon</span></p>
+                          <p class="salmon">
+                          Short and Sweet: The Power of Stories, Analogies, and Anecdotes<br><span class="vip">JD Taylor, Kevin Brown, Willeke Kremer,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Envoy</span></p>
+                          <p class="salmon">
+                          Product Overview &ndash; Change Suite<br><span class="vip">Steve Willis,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Milano</span></p>
+                          <p class="salmon">
+                          Triple Play: Workshopping with the Experts<br><span class="vip">Justin Hale &amp; Barbara Hauser,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Riviera</span></p>
+                          <p class="salmon">
+                          How to Speak Globish: Increasing Training Impact for Non&ndash;native English Speakers<br><span class="vip">Eric Francis,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Audobon</span></p>
+                        </div>
+                      </div>
+                    </li>  
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-users"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">11:15 &ndash; 11:30 <span class="meeting-type">Break</span></div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-flask"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">11:30 &ndash; 12:30 <span class="meeting-expandable">Breakout Session 4</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">
+                          Reach IN to Reach Out<br><span class="vip">Salomeh Diaz,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Murano</span></p>
+                          <p class="salmon">
+                          Decisive<br><span class="vip">Heath Brothers,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Grand Salon</span></p>
+                          <p class="salmon">
+                          Short and Sweet: The Power of Stories, Analogies, and Anecdotes<br><span class="vip">JD Taylor, Kevin Brown, Willeke Kremer,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Envoy</span></p>
+                          <p class="salmon">
+                          Ask a Master Trainer<br><span class="vip">Amy Daly-Donovan, Gerard McNeil, Judith Honesty &amp; Doug Finton,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Milano</span></p>
+                          <p class="salmon">
+                          Triple Play: Workshopping with the Experts<br><span class="vip">Justin Hale &amp; Barbara Hauser,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Riviera</span></p>
+                          <p class="salmon">
+                          Caffeinate Your Training<br><span class="vip">Patrice McGuire &amp; Beth Wolfson,</span>
+                          <span class="darkblue" style="padding-right: 10px;"> in the Audobon</span></p>
+                        </div>
+                      </div>
+                    </li>                      
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-cutlery"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">12:30 &ndash; 1:30 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Lunch</span></div>
+                      </div>
+                    </li>
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-comment"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">1:30 &ndash; 2:30 <span class="meeting-room">Imperial Ballroom</span> <span class="meeting-type">Author Q&amp;A Panel</span></div>
+                      </div>
+                    </li>   
+                    <li class="item-content darkblue">
+                      <div class="item-media"><i class="fa fa-users"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">2:30 &ndash; 3:30 <span class="meeting-type">Break &amp; Author Book Signing</span></div>
+                      </div>
+                    </li>    
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-media"><i class="fa fa-comment"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">3:30 &ndash; 4:15 <span class="meeting-expandable">BIG Idea Keynote Sessions</span></div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p class="salmon">Mindless Eating<br><span class="vip">Brian Wansink</span></p>
+                          <p class="salmon">Teach Your Children<br><span class="vip">Sharon Lovoy</span></p>
+                          <p class="salmon">Moment of Impact: Making Every Interaction Count<br><span class="vip">Dave Angel</span></p>
+                        </div>
+                      </div>
+                    </li>   
+                  </ul>
+                </div> <!-- list group -->    
+                </div>   
+              </div>  <!-- list block -->
+            </div> <!-- end page-content -->
+          </div> <!-- end page -->
+
+
+          <!-- Speakers page -->
+          <div class="page cached" data-page="speakers">
+            <div class="page-content">
+                <div class="speaker-card"><a href="#bio-joseph"><img src="img/speakers/joseph-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-susan"><img src="img/speakers/susan-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-brian"><img src="img/speakers/brian-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-mike"><img src="img/speakers/mike-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-sharon"><img src="img/speakers/sharon-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-steve"><img src="img/speakers/steve-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-cricket"><img src="img/speakers/cricket-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-david"><img src="img/speakers/david-speaker-list@2x.png"></a></div>
+                <div class="speaker-card"><a href="#bio-dave"><img src="img/speakers/dave-speaker-list@2x.png"></a></div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio joseph page -->
+          <div class="page cached bio" data-page="bio-joseph">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/joseph-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Joseph Grenny&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>Joseph Grenny is a four-time <em>New York Times</em> bestselling author, keynote speaker, and leading social scientist for business performance. For thirty years, Joseph has delivered engaging keynotes at major conferences including the HSM World Business Forum at Radio City Music Hall. Joseph's work has been translated into 28 languages, is available in 36 countries, and has generated results for 300 of the Fortune 500.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio susan page -->
+          <div class="page cached bio" data-page="bio-susan">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/susan-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Susan Cain&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>Susan Cain is the co-founder of Quiet Revolution LLC and the author of the <em>New York Times</em> bestseller <em>QUIET: The Power of Introverts in A World That Can’t Stop Talking</em>, which has been translated into thirty-six languages and was named the #1 best book of the year by <em>Fast Company</em> magazine. She received Harvard Law School’s Celebration Award for Thought Leadership and was named one of the world’s top 50 Leadership and Management Experts by <em>Inc. Magazine.</em></p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio brian page -->
+          <div class="page cached bio" data-page="bio-brian">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/brian-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Brian Wansink&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>Brian Wansink is the John Dyson Endowed Chair in the Applied Economics and Management Department at Cornell University. He is the lead author of over 100 academic articles and books on eating behavior, including the bestselling <em>Mindless Eating: Why We Eat More Than We Think</em>. From 2007-2009, Wansink accepted a Presidential appointment as Executive Director of USDA’s Center for Nutrition Policy and Promotion.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio mike page -->
+          <div class="page cached bio" data-page="bio-mike">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/mike-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Mike Rognlien&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>Mike Rognlien is the Learning and Development Manager at Facebook. He has many years of experience in designing, delivering and managing the corporate/enterprise-level employee and management development programs at several Fortune 100 companies. At Facebook, Mike oversees the learning &amp; development needs of the company’s employees in New York City, Washington D.C., Toronto, and Boston.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio sharon page -->
+          <div class="page cached bio" data-page="bio-sharon">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/sharon-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Sharon Lovoy&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>As a Master Trainer in Crucial Conversations&reg; and a Certified Trainer in Crucial Accountability&trade;, and Influencer Training&reg;, Sharon Lovoy has spent the last twenty-five years enabling organizations, teams, and individuals to break away from unproductive behaviors and develop a new, healthy culture of open communication.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio steve page -->
+          <div class="page cached bio" data-page="bio-steve">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/steve-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Steve Willis&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>One of the original VitalSmarts Master Trainers, Steve Willis helps Fortune 500 companies around the world implement organizational development strategies and overcome significant challenges to productivity, organizational change, and leadership effectiveness.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio cricket page -->
+          <div class="page cached bio" data-page="bio-cricket">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/cricket-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Cricket Buchler&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>An experienced coach and trainer, Cricket Buchler has contributed to the field of learning and development for more than ten years. She specializes in team and organizational effectiveness, strategy and implementation planning, and diversity and cultural change management and is a Master Certified Trainer and speaker in Crucial Conversations, Crucial Accountability, and Influencer Training.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio david page -->
+          <div class="page cached bio" data-page="bio-david">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/david-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;David Nelson&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>David Nelson is a Master Trainer in Crucial Conversations, Influencer Training, and Change Anything Training. He has trained clients in a wide array of industries including non-profit, manufacturing, software, hi-tech, and government. Prior to becoming a Master Trainer, he was the COO of a technology company and an investment and development consultant with an international real estate firm.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio dave page -->
+          <div class="page cached bio" data-page="bio-dave">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/dave-speaker-bio@2x.png"></div>
+                <div class="bio-name"><p>&nbsp;Dave Angel&nbsp;</p></div>
+                <div class="content-block">
+                  <div class="content-block-inner"><p>Master certified in Crucial Conversations, Crucial Accountability and Influencer Training, Dave Angel has spent more than twenty-five years training, facilitating and developing organizational and employee competencies in Fortune 500 clients. Specializing in participant-centered learning, Dave helps individuals, teams and organizations increase organizational effectiveness and achieve bottom-line results.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Speakers - Bio via template -->
+          <!-- <div class="page cached" data-page="speakers-bio">
+            <div class="page-content">
+              <div class="bio-headshot"><img src="img/speakers/{{photo}}-speaker-bio.png"></div>
+                <div class="bio-name"><p>&nbsp;{{name}}&nbsp;</p></div>
+                <div class="content-block" style="min-height: 300px;">
+                  <div class="content-block-inner"><p style="font-size: 1em;">{{bio}}</p>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+
+
+          <!-- Resources page -->
+          <div class="page cached" data-page="resources">
+            <div class="page-content">
+              <p>Resources Page</p>
+            </div>
+          </div>
+
+
+
+          <!-- FAQ page -->
+          <div class="page cached" data-page="faq">
+            <!-- Search bar -->
+            <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar">
+              <div class="searchbar-input">
+                <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+              </div><a href="#" class="searchbar-cancel">Cancel</a>
+            </form>
+           
+            <!-- Search bar overlay -->
+            <div class="searchbar-overlay"></div> 
+            <div class="page-content">
+              <!-- This block will be displayed if nothing found -->
+                <div class="content-block searchbar-not-found">
+                  <div class="content-block-inner">Nothing found</div>
+                </div>
+
+                <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+                  <div class="list-block list-block-search searchbar-found">
+
+                <div class="content-block-title">Pricing, Registration, and Cancellation</div>
+                <div class="list-block accordion-list">
+                  <ul>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">How much does it cost to attend REACH?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p><b>1-day conference pricing (Wednesday only):</b> $499 USD. $449 for early bird registration which ends May 31.</p>
+                      <p><b>2-day conference pricing:</b> $999 USD. $799 for early bird registrations which ends May 31.</p>
+                      <p><b>3-day conference pricing, including 1-day preconference:</b> $1,449 USD. $1,199 for early bird registrations which ends May 31.</p>
+                      <p>Special pricing available to VitalSmarts 2014 Elite Trainers. Contact Lauren Barrus for more information at <a href="#" onclick="window.open('mailto:lbarrus@vitalsmarts.com','_system'); return false;">lbarrus@vitalsmarts.com</a> or <a href="#" onclick="window.open('tel:801-724-6317','_system'); return false;">801-724-6317</a>.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">What is included in my registration fee?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Registration includes conference materials, as well as admission into all BIG Idea keynotes and breakout sessions. It also includes all conference meals, which are breakfast and lunch on Tuesday, Wednesday and Thursday, and dinner on Wednesday evening for those attending the 3-day event. For those attending the 2-day event, included meals are breakfast and lunch on Wednesday and Thursday and dinner on Wednesday evening.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Does the registration fee include air transportation and hotel accommodations?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>All air transportation and hotel accommodations are the responsibility of the attendee.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">I&apos;d like to send more than one person from my company. Is there a group discount?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>No. We do not offer group pricing at this time.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Who should attend REACH?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>REACH does not discriminate. Like we said, this event is designed for anyone who works with, lives by, leads, or trains other human beings. So come one, come all.</p>
+                          <p>We are particularly fond of certified trainers, clients, HR and L&amp;D managers, and executives who believe in VitalSmarts and our mission to enable others to change for good.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Do I have to be a VitalSmarts Certified Trainer to attend?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>No, you do not have to be a VitalSmarts Certified Trainer to attend REACH.  The conference will also be a valuable professional development experience for anyone interested in increasing their personal influence or changing human behavior, as well as VitalSmarts training.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Who should attend the REACH Labs preconference session and what information will be covered? </div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>REACH Labs is a pre-conference workshop where attendees will discuss ideas in small groups, work side-by-side with VitalSmarts authors to design influence strategies, and consult with Master Trainers on individual challenges. This year, there are two options to choose from:</p>
+                          <p>Option 1: Author David Maxfield will lead a session on becoming an opinion leader (based on his popular Harvard Medical School workshop). You’ll learn the vital behaviors of opinion leaders, and then build a multi-faceted influence plan to help you succeed in your organization.</p>
+                          <p>Option 2: Master Trainer Steve Willis will lead a session on how to orchestrate the success of your training rollout. You’ll learn how to use The Six Sources of Influence™ from the Influencer Training course to ensure your program gets the buy-in and learning transference it needs to succeed.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Will I receive confirmation of my registration?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Yes. After you register online, you will receive an automated e-mail confirming your registration.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">What types of payments are accepted for the conference fee?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>We accept Visa, Mastercard, Discover, American Express, Check, or PO. If paying with a Check or PO, the payment must be received at VitalSmarts on or before Tuesday, July 15. Please make checks payable to VitalSmarts and mail to 282 River Bend Lane, Provo, Utah, 84604, Attn: Tara McCabe.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Is my reservation transferable?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Yes. If you register and pay but are unable to attend, you can transfer your registration to a colleague from your company for a $50 processing fee until Tuesday, July 15. Please submit all transfer requests to <a href="#" onclick="window.open('mailto:tmccabe@vitalsmarts.com','_system'); return false;">tmccabe@vitalsmarts.com</a>. For further questions please call Tara McCabe at <a href="#" onclick="window.open('tel:1-800-765-9600','_system'); return false;">1-800-765-9600</a> within the United States or <a href="#" onclick="window.open('tel:1-801-724-6342','_system'); return false;">1-801-724-6342</a> from outside the United States.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">What if I have to cancel?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>The following cancellation dates and fees apply:</p>
+                          <p>If you cancel between <b>March 1 and May 1, 2015</b>, you must pay a $50 cancellation fee.</p>
+                          <p>If you cancel between <b>May 2 and June 1, 2015</b>, you must pay a $100 cancellation fee.</p>
+                          <p>If you cancel between <b>June 2 and July 15, 2015</b>, you must pay a $350 cancellation fee.</p>
+                          <p>There will be no refund if you cancel <b>after July 15, 2015</b>.</p>
+                          <p>Please be aware that you also need to make the necessary cancellation arrangements for hotel accommodations and/or any other services that you have contracted.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <div class="content-block-title">Hotel, Travel, and Venue</div>
+                <div class="list-block accordion-list">
+                  <ul>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">What is the closest airport?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Salt Lake City International Airport (SLC) is 8 miles from The Grand America Hotel (about a 10 minute drive).</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">How do I get from the airport to The Grand America Hotel?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p><a href="#">Driving directions</a> and <a href="#">Salt Lake City transportation options</a> are available from The Grand America website.</p>
+                          <p>For travel questions, please contact Amy Baum at <a href="#" onclick="window.open('tel:1-800-449-5989','_system'); return false;">1-800-449-5989</a> within the U.S., <a href="#" onclick="window.open('tel:1-801-724-6324','_system'); return false;">1-801-724-6324</a> from outside the U.S., or email us at <a href="#" onclick="window.open('mailto:REACHquestion@vitalsmarts.com','_system'); return false;">REACHquestion@vitalsmarts.com</a>. </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">What kind of weather should I anticipate?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Salt Lake City is typically warm in July averaging high temperatures of 92 and low temperatures of 67.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">How should I dress?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Business casual attire is appropriate during the conference.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Are discounted rates available at The Grand America Hotel?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>VitalSmarts has reserved rooms with discounted rates at The Grand America. Premier rooms are $235 per night. Reservations are accepted on a first-come, first-served basis, and discounted rooms are only available while the limited block lasts, so be sure to reserve your room early.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="content-block-title">Other</div>
+                <div class="list-block accordion-list">
+                  <ul>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">I have specific questions that are NOT addressed here. Who can help me?</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>For registration questions, please contact Tara McCabe <a href="#" onclick="window.open('tel:1-800-765-9600','_system'); return false;">1-800-765-9600</a> within the United States, <a href="#" onclick="window.open('tel:1-801-724-6342','_system'); return false;">1-801-724-6342</a> from outside the United States, or <a href="#" onclick="window.open('mailto:tmccabe@vitalsmarts.com','_system'); return false;">tmccabe@vitalsmarts.com</a>.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>    
+
+                </div>
+            </div>
+          </div>
+
+          <!-- Venue Map page -->
+          <div class="page cached" data-page="venue-map">
+            <div class="page-content">
+              <img src="img/venues/grandamerica-bg.png" style="width: 100%; max-height: 200px;">
+              <div class="col-33"><a href="#" class="button pb-popup" style="clear: both;">Maps for REACH 2015</a></div>
+            </div>
+          </div>
+
+          <!-- Location Info page -->
+          <div class="page cached" data-page="location-info">
+            <div class="page-content">
+              <div class="content-block-title">Information</div>
+              <div class="content-block">
+              
+                <div class="content-block-inner">
+                  <p><strong>Geography:</strong> Salt Lake lies in a mountain valley with the Wasatch Mountains to the east and north. The city is situated on land once covered by the prehistoric Lake Bonneville. This ancient lake existed within portions of Utah, Nevada, and Idaho, with an elevation rising from 4,200 feet to 5,200 feet (1,280 meters to 1,585 meters) at some points.</p>
+                  <p><strong>Airport Transportation:</strong> The airport is just 10 minutes from downtown. Taxis, limousines, buses, and shuttles provide airport service to anywhere in the valley and to local ski resorts. Many hotels provide complimentary airport shuttle service.
+                  <br /><a href="#" onclick="window.open('http://www.visitsaltlake.com/trip-planner/transportation/airport/','_system'); return false;">more Airport information</a></p>
+                  <p><strong>Liquor Laws</strong> Misperceptions abound when it comes to Utah's liquor laws. It is as easy to get a drink in Salt Lake as it is to order a meal.
+                  <br /><a href="#" onclick="window.open('http://www.visitsaltlake.com/restaurants/utah-drinking/','_system'); return false;">more about Utah's liquor laws</a></p>
+                </div>
+              </div>
+              <div class="content-block-title">Important Telephone Numbers</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <p><strong>Traffic/Road Conditions/Transit Info:</strong> 511
+                  <br />Toll-free outside Utah 866-511-UTAH </p>
+                  </p>
+                  <p><strong>Services for the Disabled:</strong> <a href="#" onclick="window.open('tel:800-333-8824','_system'); return false;">800-333-8824</a> </p>
+                  <p><strong>Time and Temperature:</strong> <a href="#" onclick="window.open('tel:801-467-8463','_system'); return false;">801-467-8463</a> </p>
+                  <p><strong>Airport Information:</strong> <a href="#" onclick="window.open('tel:801-575-2400','_system'); return false;">801-575-2400</a> </p>
+                  <p><strong>Emergency Fire, Medical, or Police:</strong> 911 </p>
+                  <p><strong>Police (non emergency):</strong> <a href="#" onclick="window.open('tel:801-799-3000','_system'); return false;">801-799-3000</a> </p>
+                  <p><strong>Highway Patrol Office:</strong> <a href="#" onclick="window.open('tel:801-887-3800','_system'); return false;">801-887-3800</a> </p>
+                  <p><strong>Highway Helpline (limited cellular):</strong> *11 </p>
+                </div>
+              </div>
+              <div class="content-block-title">Stats</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <p><strong>Population:</strong> 191,180</p>
+                  <p><strong>Elevation:</strong> 4,330 feet 1,320 meters</p>
+                  <p><strong>Average daily temperature:</strong> July - 77 F / 25 C</p>
+                </div>
+              </div> 
+              <div class="content-block">
+                <p>source: <a href="#" onclick="window.open('http://www.visitsaltlake.com/','_system'); return false;">visitsaltlake.com</a></p> 
+              </div>        
+            </div>
+
+          <!-- Attendees page -->
+          <div class="page cached" data-page="attendees">
+            <div class="page-content">
+              <p>Attendees Page</p>
+            </div>
+          </div>
+
+          <!-- Sponsors page -->
+          <div class="page cached" data-page="sponsors">
+            <div class="page-content">
+              <br>
+              <div class="row">
+                <div class="col-100 tablet-50"><img src="img/sponsors/sponsor-soundview.png"></div>
+              </div>
+              <div class="row">
+                <div class="col-100 tablet-50"><img src="img/sponsors/sponsor-telenect.png" style="width: 90%;"></div>
+              </div>
+              <div class="row">
+                <div class="col-100 tablet-50"><img src="img/sponsors/sponsor-turning.png"></div>
+              </div>
+              <div class="row">
+                <div class="col-100 tablet-50"><img src="img/sponsors/sponsor-hr.png"></div>
+              </div>
+              <div class="row">
+                <div class="col-100 tablet-50"><img src="img/sponsors/sponsor-meeting-one.png"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Labs page -->
+          <div class="page cached" data-page="labs">
+            <div class="page-content">
+                  <div class="content-block-title">REACH Labs, July 29</div>
+                  <div class="list-block accordion-list">
+                    <ul>
+                      <li class="accordion-item"><a href="#" class="item-content item-link">
+                          <div class="item-inner">
+                            <div class="item-title">Lab 1: 10x Your Training Implementation</div>
+                          </div></a>
+                        <div class="accordion-item-content">
+                          <div class="content-block">
+                            <p><strong>Lab 1: 10x Your Training Implementation</strong><br> <span class="darkblue">with <em>David Maxfield</em></span></p>
+                            <p class="darkblue">8:55 AM – 4:30 PM <span class="meeting-room">Murano</span></p>
+                            <p>In this hands-on workshop, David Maxfield will coach you through designing and implementing a training rollout strategy using the Six Sources of Influence™ found in Influencer Training. Learn how to masterfully orchestrate the success of your training rollout by:</p>
+                            <ul style="list-style-type: disc; padding-left: 10px; margin-left: 10px;">
+                              <li>Identifying common barriers that impede most training implementations.</li>
+                              <li>Developing strategies tailored to your organization’s unique needs.</li>
+                              <li>Identifying common barriers that impede most training implementations.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="accordion-item" style="font-size: 0.9em;"><a href="#" class="item-content item-link">
+                          <div class="item-inner">
+                            <div class="item-title">Lab 2: The Great Teaching Experiment</div>
+                          </div></a>
+                        <div class="accordion-item-content">
+                          <div class="content-block">
+                            <p><strong>Lab 2: The Great Teaching Experiment</strong><br><span class="darkblue">with <em>Steve Willis</em></span></p>
+                            <p class="darkblue">8:55 AM – 4:30 PM <span class="meeting-room">Savoy</span></p>
+                            <p>Master Trainer Steve Willis will share with you an enlightening glimpse at an experiement in teaching. What happens when you have the right stakes, at the right time, with the right people?</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content-block" style="font-size: 0.9em;">
+                    <p>REACH Labs are pre-conference workshops where attendees discuss ideas in small groups, work side-by-side with VitalSmarts authors to design influence strategies, and consult with Master Trainers on individual challenges. Choose one of two learning options:</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+          <!-- Breakouts page -->
+          <div class="page cached" data-page="breakouts">
+            <div class="page-content">
+              <div class="content-block">
+                <!-- Buttons row as tabs controller -->
+                <div class="buttons-row">
+                  <!-- Link to 1st tab, active -->
+                  <a href="#tab1" class="tab-link active button">July 29</a>
+                  <!-- Link to 2nd tab -->
+                  <a href="#tab2" class="tab-link button">July 30</a>
+                </div>
+              </div>
+              <!-- Tabs, tabs wrapper -->
+              <div class="tabs">
+                <!-- Tab 1, active by default -->
+                <div id="tab1" class="tab active">
+                  <div class="content-block">
+                    <ul>
+                      <li>Breakout Option 1</li>
+                      <li>Breakout Option 2</li>
+                      <li>Breakout Option 3</li>
+                      <li>Breakout Option 4</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab2" class="tab">
+                  <div class="content-block">
+                    <ul>
+                      <li>Breakout Option 1</li>
+                      <li>Breakout Option 2</li>
+                      <li>Breakout Option 3</li>
+                      <li>Breakout Option 4</li>
+                      <li>Breakout Option 5</li>
+                      <li>Breakout Option 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Big Ideas page -->
+          <div class="page cached" data-page="big-ideas">
+            <div class="page-content">
+              <div class="content-block">
+                <!-- Buttons row as tabs controller -->
+                <div class="buttons-row">
+                  <!-- Link to 1st tab, active -->
+                  <a href="#tab1" class="tab-link active button">July 29</a>
+                  <!-- Link to 2nd tab -->
+                  <a href="#tab2" class="tab-link button">July 30</a>
+                </div>
+              </div>
+              <!-- Tabs, tabs wrapper -->
+              <div class="tabs">
+                <!-- Tab 1, active by default -->
+                <div id="tab1" class="tab active">
+                  <div class="content-block">
+                    <ul>
+                      <li>BIG Idea Option 1</li>
+                      <li>BIG Idea Option 2</li>
+                      <li>BIG Idea Option 3</li>
+                      <li>BIG Idea Option 4</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab2" class="tab">
+                  <div class="content-block">
+                    <ul>
+                      <li>BIG Idea Option 1</li>
+                      <li>BIG Idea Option 2</li>
+                      <li>BIG Idea Option 3</li>
+                      <li>BIG Idea Option 4</li>
+                      <li>BIG Idea Option 5</li>
+                      <li>BIG Idea Option 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- default page -->
+          <div class="page cached" data-page="default">
+            <div class="page-content">
+              <p>Default Page</p>
+            </div>
+          </div>
+        
+
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/countdown.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

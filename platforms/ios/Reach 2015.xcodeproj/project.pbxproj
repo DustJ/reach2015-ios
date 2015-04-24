@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1814F9974F9D4C988CCBACE6 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E836A9E6C39A462492B9B342 /* CDVInAppBrowser.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -43,6 +42,9 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		8F58B5DE26BE4415BC663F50 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0A0A465524CB9BCC27D98 /* CDVStatusBar.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		9F62E97B0FF24C1989885471 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA0EE320A24AC5947A7A80 /* SocialSharing.m */; };
+		9C1C50122E23403FBDBC87DA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A336404E944138B50B1BE /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		93F4A204224E4F55B67938B0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE2D95F8CF843A7A7514993 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,10 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Reach 2015/config.xml"; sourceTree = "<group>"; };
+		23EA0EE320A24AC5947A7A80 /* SocialSharing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialSharing.m"; path = "nl.x-services.plugins.socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		B0D1D886F3EF4575922AD141 /* SocialSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialSharing.h"; path = "nl.x-services.plugins.socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		236A336404E944138B50B1BE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		1BE2D95F8CF843A7A7514993 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				9C1C50122E23403FBDBC87DA /* Social.framework in Frameworks */,
+				93F4A204224E4F55B67938B0 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				236A336404E944138B50B1BE /* Social.framework */,
+				1BE2D95F8CF843A7A7514993 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +224,8 @@
 				C54070F8BB2B44F0BEDD4752 /* CDVInAppBrowser.h */,
 				0DB0A0A465524CB9BCC27D98 /* CDVStatusBar.m */,
 				269C40EB2FD14A7DB3ADE3AC /* CDVStatusBar.h */,
+				23EA0EE320A24AC5947A7A80 /* SocialSharing.m */,
+				B0D1D886F3EF4575922AD141 /* SocialSharing.h */,
 			);
 			name = Plugins;
 			path = "Reach 2015/Plugins";
@@ -406,6 +418,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				1814F9974F9D4C988CCBACE6 /* CDVInAppBrowser.m in Sources */,
 				8F58B5DE26BE4415BC663F50 /* CDVStatusBar.m in Sources */,
+				9F62E97B0FF24C1989885471 /* SocialSharing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

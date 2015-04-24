@@ -1,7 +1,7 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vitalsmarts.event.reachapp" version="1.0.0">
-  <name>Reach 2015</name>
-  <description>Reach 2015 Event App</description>
-  <author href="https://vitalsmarts.com" email="techsupport@vitalsmarts.com.">VitalSmarts Tech Support</author>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vitalsmarts.event.testapp" version="1.0.0">
+  <name>Reach 2015 - Test</name>
+  <description>Hello World sample application that responds to the deviceready event.</description>
+  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
@@ -36,6 +36,7 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
+  <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
   <preference name="DisallowOverscroll" value="true" />
   <icon src="icon.png"/>
   <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>

@@ -40,8 +40,6 @@ if (timespan.value < 0) {
     // Countdown.js rounds, so at noon, the count dropped a full day.
     // This was fine until the day before the event where it would say 0 days left (less then 1 full day remained).
     // After a little usability testing everyone thought it should say 1 day left until the morning of the event.
-    // The next two lines *lazily* get our countdown to match what's expected.
-    timespan.days = Math.floor(timespan.days);
     daysAdjuster = timespan.days+1; 
     
     //update #countdown-holder

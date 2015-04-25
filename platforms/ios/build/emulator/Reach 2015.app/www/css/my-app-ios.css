@@ -64,6 +64,7 @@ body.with-panel-left-reveal .statusbar-overlay {
 }
 
 
+
 /*  Agenda section  */
 /*.page[data-page="agenda"] .item-content {
   background-color: #eee; 
@@ -191,6 +192,16 @@ div[class*="col-"], div[class*="tablet-"] {
   text-align: center;
 }
 
+#hashtag-holder {
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+}
+
 
 /* iPhone 4s Portrait */
 @media only screen 
@@ -218,6 +229,10 @@ div[class*="col-"], div[class*="tablet-"] {
   .panel-left .item-link .item-inner{
     padding: 2px 35px 4px 0;
     min-height: inherit;
+  }
+  #hashtag-holder {
+  font-size: 1.2em;
+  top: 68%;
   }
 }
 
@@ -252,6 +267,9 @@ div[class*="col-"], div[class*="tablet-"] {
   .page[data-page="faq"] .list-block{
   font-size: 1em;
   }
+  #hashtag-holder {
+  top: 67.5%;
+  }
 }
 
 
@@ -272,6 +290,9 @@ div[class*="col-"], div[class*="tablet-"] {
     .bio .content-block-inner p {
       font-size: 1.1em;
     }
+    #hashtag-holder {
+    top: 67.5%;
+    }
 }
 
 
@@ -288,6 +309,9 @@ div[class*="col-"], div[class*="tablet-"] {
 
     .bio .content-block-inner p {
       font-size: 1.1em;
+    }
+    #hashtag-holder {
+    top: 67.5%;
     }
 
 }

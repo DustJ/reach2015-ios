@@ -291,12 +291,12 @@ static const void *kStatusBarStyle = &kStatusBarStyle;
 
 - (void) styleBlackTranslucent:(CDVInvokedUrlCommand*)command
 {
-    [self setStyleForStatusBar:UIStatusBarStyleLightContent];
+    [self setStyleForStatusBar:UIStatusBarStyleBlackTranslucent];
 }
 
 - (void) styleBlackOpaque:(CDVInvokedUrlCommand*)command
 {
-    [self setStyleForStatusBar:UIStatusBarStyleLightContent];
+    [self setStyleForStatusBar:UIStatusBarStyleBlackOpaque];
 }
 
 - (void) backgroundColorByName:(CDVInvokedUrlCommand*)command

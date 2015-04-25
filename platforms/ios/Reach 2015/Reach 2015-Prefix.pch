@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'Reach 2015 - Test' target in the 'Reach 2015 - Test' project
+// Prefix header for all source files of the 'Reach 2015' target in the 'Reach 2015' project
 //
 
 #ifdef __OBJC__

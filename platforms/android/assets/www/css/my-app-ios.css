@@ -230,6 +230,10 @@ div[class*="col-"], div[class*="tablet-"] {
     padding: 2px 35px 4px 0;
     min-height: inherit;
   }
+  #hashtag-holder {
+  font-size: 1.2em;
+  top: 68%;
+  }
 }
 
 /* iPhone 5 and 5s Portrait */
@@ -263,6 +267,9 @@ div[class*="col-"], div[class*="tablet-"] {
   .page[data-page="faq"] .list-block{
   font-size: 1em;
   }
+  #hashtag-holder {
+  top: 67.5%;
+  }
 }
 
 
@@ -283,6 +290,9 @@ div[class*="col-"], div[class*="tablet-"] {
     .bio .content-block-inner p {
       font-size: 1.1em;
     }
+    #hashtag-holder {
+    top: 67.5%;
+    }
 }
 
 
@@ -299,6 +309,9 @@ div[class*="col-"], div[class*="tablet-"] {
 
     .bio .content-block-inner p {
       font-size: 1.1em;
+    }
+    #hashtag-holder {
+    top: 67.5%;
     }
 
 }

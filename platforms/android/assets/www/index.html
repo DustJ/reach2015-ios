@@ -122,7 +122,7 @@
               </div>
               </div></a>
             </li> -->
-            <li><a href="#" onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')" class="close-panel">
+            <li><a href="#" onclick="window.plugins.socialsharing.shareViaTwitter('#iheartreach')" class="close-panel">
               <div class="item-content">
               <div class="item-media color-blue"><i class="fa fa-twitter"></i></div>
               <div class="item-inner">
@@ -130,7 +130,7 @@
               </div>
               </div></a>
             </li>
-            <li><a href="#" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */)" class="close-panel">
+            <li><a href="#" onclick="onclick="window.plugins.socialsharing.shareViaFacebook(null, null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"" class="close-panel">
               <div class="item-content">
               <div class="item-media color-blue"><i class="fa fa-facebook"></i></div>
               <div class="item-inner">
@@ -349,7 +349,7 @@
           <div class="page" data-page="index">
             <div class="page-content">
               <div id="countdown-holder"></div>
-              <a href="#" onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')" id="hashtag-holder">#iheartreach</a>
+              <a href="#" onclick="window.plugins.socialsharing.shareViaTwitter('#iheartreach')" id="hashtag-holder">#iheartreach</a>
             </div>  
           </div>
  
@@ -970,7 +970,7 @@
                         </div></a>
                       <div class="accordion-item-content">
                         <div class="content-block">
-                          <p>Yes! Follow along with the conversation on social media using the hashtag: #iheartreach.</p>
+                          <p>Yes! Follow along with the conversation on social media using the hashtag: <a href="#" onclick="window.plugins.socialsharing.shareViaTwitter('#iheartreach')" class="close-panel">#iheartreach</a>.</p>
                         </div>
                       </div>
                     </li>

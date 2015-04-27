@@ -31,10 +31,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
                             "count": 1
                         },
@@ -49,6 +45,10 @@
                         {
                             "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -56,14 +56,14 @@
         }
     },
     "installed_plugins": {
-        "nl.x-services.plugins.socialsharing": {
-            "PACKAGE_NAME": "com.vitalsmarts.event.reachapp"
-        },
         "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "com.vitalsmarts.event.reachapp"
         },
         "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "com.vitalsmarts.event.reachapp"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.vitalsmarts.reachapp"
         }
     },
     "dependent_plugins": {}

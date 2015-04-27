@@ -29,8 +29,8 @@ $$('.pb-page').on('click', function () {
 });
 
 
-// Countdown Date(2015, 06, 29) = July 29th 2015 (zero based month)
-var timespan = countdown(null, new Date(2015, 06, 29), countdown.DAYS);
+// Countdown Date(2015, 06, 28) = July 28th 2015 (zero based month)
+var timespan = countdown(null, new Date(2015, 06, 28), countdown.DAYS);
 var clock = document.getElementById("countdown-holder");
 
 if (timespan.value < 0) {

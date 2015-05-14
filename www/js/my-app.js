@@ -16,17 +16,20 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
+
+// Hotel maps
 var myPhotoBrowserPage = myApp.photoBrowser({
     photos : [
         'img/venues/grandamerica-firstfloor.jpg',
         'img/venues/grandamerica-thirdfloor.jpg',
     ],
-    type: 'page',
+    type: 'popup',
     backLinkText: 'Back'
 });
 $$('.pb-page').on('click', function () {
     myPhotoBrowserPage.open();
 });
+    
 
 
 // Countdown Date(2015, 06, 28) = July 28th 2015 (zero based month)
@@ -46,6 +49,30 @@ if (timespan.value < 0) {
     clock.innerHTML = daysAdjuster.toString();
     
     // Testing
-    console.log(timespan);
-    //console.log(dayAdjuster)
+    // console.log(timespan);
+    // console.log(dayAdjuster)
 };
+
+
+
+// Google Analytics
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// device APIs are available
+function onDeviceReady() {
+    if (window.cordova.logger) {
+            window.cordova.logger.__onDeviceReady();
+        }
+    window.analytics.startTrackerWithId('UA-62952710-1');
+    window.analytics.debugMode()
+    console.log('Analytics should be working.');
+}
+
+myApp.onPageInit('*', function (page) {
+    window.analytics.trackView(page.url)
+    // window.analytics('send', 'pageview', page.url);
+});
+
+onLoad();

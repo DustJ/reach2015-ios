@@ -27,6 +27,12 @@
         <param name="ios-package" value="SocialSharing" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="UniversalAnalytics">
+        <param name="ios-package" value="UniversalAnalyticsPlugin" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
     <name>Reach 2015</name>
     <description>REACH 2015</description>
     <author email="djacobson@vitalsmarts.com" href="https://www.vitalsmarts.com/reach/reach15">VitalSmarts App Team</author>

@@ -24,6 +24,30 @@
                             "xml": false,
                             "count": 1
                         }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreData.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libz.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libsqlite3.0.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -49,6 +73,14 @@
                         {
                             "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"UniversalAnalytics\"><param name=\"ios-package\" value=\"UniversalAnalyticsPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -63,6 +95,12 @@
             "PACKAGE_NAME": "com.vitalsmarts.event.reachapp"
         },
         "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.vitalsmarts.reachapp"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "com.vitalsmarts.reachapp"
+        },
+        "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.vitalsmarts.reachapp"
         }
     },

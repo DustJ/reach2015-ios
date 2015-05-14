@@ -58,7 +58,7 @@
               </div>
               </div></a>
             </li> -->
-            <li><a href="#venue-map" class="close-panel item-link pb-page">
+            <li><a href="#venue-map" class="close-panel item-link pb-page" onclick="window.analytics.trackView('#venue-map')" >
               <div class="item-content">
               <div class="item-media color-blue"><i class="fa fa-location-arrow"></i></div>
               <div class="item-inner">
@@ -84,7 +84,7 @@
             </li> -->
             <li><a href="#sponsors" class="close-panel item-link">
               <div class="item-content">
-              <div class="item-media color-blue"><i class="fa fa-info-circle"></i></div>
+              <div class="item-media color-blue"><i class="fa fa-diamond"></i></div>
               <div class="item-inner">
               <div class="item-title">Sponsors</div>
               </div>
@@ -111,6 +111,14 @@
               <div class="item-media color-blue"><i class="fa fa-question-circle"></i></div>
               <div class="item-inner">
               <div class="item-title">FAQ</div>
+              </div>
+              </div></a>
+            </li>
+            <li><a href="#help" class="close-panel item-link">
+              <div class="item-content">
+              <div class="item-media color-blue"><i class="fa fa-info-circle"></i></div>
+              <div class="item-inner">
+              <div class="item-title">App Help</div>
               </div>
               </div></a>
             </li>
@@ -332,6 +340,14 @@
                 <a href="#" class="back"><i class="fa fa-chevron-left"></i> Back</a>
             </div>
             <div class="center sliding">BIG Ideas</div>
+          </div>
+
+          <!-- App Help page navbar -->
+          <div class="navbar-inner cached" data-page="help">
+              <div class="left sliding">
+                <a href="#" data-panel="left" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="center sliding">App Help</div>
           </div>
 
 
@@ -1252,14 +1268,6 @@
             </div>
           </div>
 
-          <!-- Venue Map page -->
-          <div class="page cached" data-page="venue-map">
-            <div class="page-content">
-              <img src="img/venues/grandamerica-bg.png" style="width: 100%; max-height: 200px;">
-              <div class="col-33"><a href="#" class="button pb-popup" style="clear: both;">Maps for REACH 2015</a></div>
-            </div>
-          </div>
-
           <!-- Location Info page -->
           <div class="page cached" data-page="location-info">
             <div class="page-content">
@@ -1361,17 +1369,17 @@
                           </div>
                         </div>
                       </li>
-                      <li class="accordion-item" style="font-size: 0.9em;"><a href="#" class="item-content item-link">
+                      <li class="accordion-item"><a href="#" class="item-content item-link">
                           <div class="item-inner">
-                            <div class="item-title">Lab 2: Sharpen Your Facilitation Skill</div>
+                            <div class="item-title">Lab 2: Sharpen Your Facilitation Skills</div>
                           </div></a>
                         <div class="accordion-item-content">
                           <div class="content-block">
-                            <p><strong>Lab 2: Sharpen Your Facilitation Skills</strong><br><span class="darkblue">with <em>Steve Willis &amp; JD Taylor</em></span></p>
-                            <p class="darkblue">8:55 AM – 4:30 PM <span class="meeting-room">Savoy</span></p>
+                            <p><strong>Lab 2: Sharpen Your Facilitation Skill</strong><br> <span class="darkblue">with <em>Steve Willis &amp; JD Taylor</em></span></p>
+                            <p class="darkblue">8:55 AM – 4:30 PM <span class="meeting-room">SAVOY</span></p>
                             <p>We all know it’s the trainer who puts the train in training. Great content in the hands of a skilled facilitator makes all the difference between an average and phenomenal experience in the classroom. In this lab session, we’ll focus on refining your facilitation skills. Take some time to develop your greatest asset—you!</p>
                           </div>
-                        </div>
+                        </div>  
                       </li>
                     </ul>
                   </div>
@@ -1467,6 +1475,13 @@
             </div>
           </div>
 
+          <!-- App Help page -->
+          <div class="page cached" data-page="help">
+            <div class="page-content">
+              <p>App Help</p>
+            </div>
+          </div>
+
           <!-- default page -->
           <div class="page cached" data-page="default">
             <div class="page-content">
@@ -1478,11 +1493,12 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/countdown.min.js"></script>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
   </body>
 </html>

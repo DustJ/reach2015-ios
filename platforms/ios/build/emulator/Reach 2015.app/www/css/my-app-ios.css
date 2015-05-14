@@ -114,7 +114,7 @@ body.with-panel-left-reveal .statusbar-overlay {
   font-size: 1em;
 }
 .accordion-item-expanded .accordion-item-content {
-  background: #eee;
+  background: #EFEFF4;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }

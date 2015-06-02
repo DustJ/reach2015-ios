@@ -38,6 +38,7 @@ var clock = document.getElementById("countdown-holder");
 
 if (timespan.value < 0) {
     $$('.page[data-page="index"]').css('background-image', 'url("img/home-bg-begin.jpg")');
+    $$('#hashtag-holder').css('top', '70%');
 } else {
 
     // Countdown.js rounds, so at noon, the count dropped a full day.
@@ -53,6 +54,8 @@ if (timespan.value < 0) {
     // console.log(dayAdjuster)
 };
 
+
+
 // Google Analytics
 function onLoad() {
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -64,13 +67,11 @@ function onDeviceReady() {
             window.cordova.logger.__onDeviceReady();
         }
     window.analytics.startTrackerWithId('UA-62952710-1');
-    window.analytics.debugMode()
-    console.log('Analytics should be working.');
+    // window.analytics.debugMode()
 }
 
 myApp.onPageInit('*', function (page) {
     window.analytics.trackView(page.url)
-    // window.analytics('send', 'pageview', page.url);
 });
 
 onLoad();

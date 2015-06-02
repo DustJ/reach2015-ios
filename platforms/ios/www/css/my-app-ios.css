@@ -23,7 +23,9 @@
 .bg-salmon {
   background-color: #e64c3c;
 }
-
+.content-block-title {
+  color: #e64c3c;
+}
 
 /*  Status bar overlay  */
 .statusbar-overlay {
@@ -165,7 +167,10 @@ body.with-panel-left-reveal .statusbar-overlay {
 /*  Sponsors styling  */
 div[class*="col-"], div[class*="tablet-"] {
   text-align: center;
+}
+div[class*="tablet-"] {
   padding: 15px;
+}
 }
 .row {
   margin-bottom: 15px;
@@ -202,6 +207,22 @@ div[class*="col-"], div[class*="tablet-"] {
   text-align: center;
 }
 
+/*  App Help  */
+.page[data-page="app-help"] img {
+    width: 100%;
+}  
+.page[data-page="app-help"] .content-block {
+    margin-top: 0;
+} 
+.page[data-page="app-help"] .content-block p {
+    /*font-weight: bold;*/
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    background-color: #e64c3c;
+    color: #fff;
+    font-size: 14px;
+} 
 
 /* iPhone 4s Portrait */
 @media only screen 

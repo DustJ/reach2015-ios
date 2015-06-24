@@ -23,13 +23,14 @@ var myPhotoBrowserPage = myApp.photoBrowser({
         'img/venues/grandamerica-firstfloor.jpg',
         'img/venues/grandamerica-thirdfloor.jpg',
     ],
-    type: 'popup',
+    type: 'page',
     backLinkText: 'Back'
+
 });
 $$('.pb-page').on('click', function () {
     myPhotoBrowserPage.open();
 });
-    
+
 
 
 // Countdown Date(2015, 06, 28) = July 28th 2015 (zero based month)
@@ -68,6 +69,7 @@ function onDeviceReady() {
         }
     window.analytics.startTrackerWithId('UA-62952710-1');
     // window.analytics.debugMode()
+    
 }
 
 myApp.onPageInit('*', function (page) {

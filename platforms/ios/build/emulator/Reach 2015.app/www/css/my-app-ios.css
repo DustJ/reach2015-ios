@@ -206,24 +206,11 @@ div[class*="tablet-"] {
   text-align: center;
   line-height: 1em;
 }
+
 #hashtag-cta {
   font-size: 0.7em;
   letter-spacing: 0.1em;
-  
-
-
   margin-top: -8px;
-  /*
-    WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-    WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-    WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-
-    See if you can decrease the line-height
-    
-    WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-    WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-
-  */
   color: rgba(255,255,255,0.5);
 }
 
@@ -347,7 +334,6 @@ div[class*="tablet-"] {
       font-size: 2em;
       top: 48%;
     }
-
     .bio .content-block-inner p {
       font-size: 1.1em;
     }
@@ -356,3 +342,72 @@ div[class*="tablet-"] {
     }
 
 }
+
+
+
+/* iPad (non retina) & iPad Mini */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait) { 
+
+    .page[data-page="index"] {
+      background-position: center 50%;
+    }
+    #countdown-holder {
+      font-size: 4.4em;
+      top: 53.6%;
+    }
+    #hashtag-holder {
+      font-size: 2em;
+      top: 76%;
+    }
+    .page[data-page="agenda"] .list-block{
+      font-size: 1.1em;
+    }
+    .page[data-page="labs"] .list-block{
+      font-size: 1.4em;
+    }
+    .speaker-card {
+      margin: 20px 0;
+      float: right;
+    }
+    .bio .content-block-inner p {
+      font-size: 1.2em;
+    }
+}
+
+
+
+/* iPad Retina */
+/*@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .page[data-page="index"] {
+      background-position: center 30%;
+    }
+    #countdown-holder {
+      font-size: 4.5em;
+      top: 56%;
+    }
+    #hashtag-holder {
+      font-size: 2em;
+      top: 76%;
+    }
+    .page[data-page="agenda"] .list-block{
+      font-size: 1.1em;
+    }
+    .page[data-page="labs"] .list-block{
+      font-size: 1.4em;
+    }
+    .speaker-card {
+      margin: 20px 0;
+      float: right;
+    }
+    .bio .content-block-inner p {
+      font-size: 1.2em;
+    }
+}*/

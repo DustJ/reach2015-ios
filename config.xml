@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vitalsmarts.reachapp" version="1.4.3">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vitalsmarts.reachapp" version="1.4.5">
   <name>Reach 2015</name>
   <description>REACH 2015</description>
   <author href="https://www.vitalsmarts.com/reach/reach15" email="djacobson@vitalsmarts.com">VitalSmarts App Team</author>
